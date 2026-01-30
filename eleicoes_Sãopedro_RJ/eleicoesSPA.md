@@ -95,8 +95,10 @@ op1 |>
              percent = "(%)") |>
   tab_source_note(source_note = "Fonte: TSE (Via ElectionsBR) | Elaborado por: Lucas Viana")
 
-
 ```
+<img width="1092" height="629" alt="Eleitorado_escolaridade" src="https://github.com/user-attachments/assets/c453e377-3136-4339-adb3-9947670ffe32" />
+<img width="1092" height="629" alt="Eleitorado_genero" src="https://github.com/user-attachments/assets/5583a90f-f2d6-4dfc-a5f4-4aa5102110af" />
+
 
 ### Carregando os dados - seções eleitorais
 
@@ -143,10 +145,10 @@ ggplot2::ggplot(df_p, aes(x  = nm_local_votacao, y = qt_votos, fill = nm_votavel
     panel.grid.minor = element_blank()
   )
 
-
-
-
 ```
+
+![dist_votos_ZE](https://github.com/user-attachments/assets/fe5a1c67-9de9-42fd-b4bc-094b2f257bc0)
+
 
 ### Processamento de Dados Espaciais e Ranking
 
@@ -229,4 +231,4 @@ leaflet::leaflet(df_mapa_final) |>
 
 ### Resultado
 
-O Resultado do mapa interativo foi publicado no RPubs e pode ser visualizado em \[Mapa das eleições 2024 em SPA\](<https://rpubs.com/Vianalucaz/eleicaospa2024>)
+O Resultado do mapa interativo foi publicado no RPubs e pode ser visualizado em [Mapa das eleições 2024 em SPA](https://rpubs.com/Vianalucaz/eleicaospa2024)
